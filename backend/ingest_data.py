@@ -34,4 +34,24 @@ if not OPENAI_API_KEY:
 
 
 # Load Documents
-documents = []
+documents = [
+    Document(
+        page_content="Meeting notes: Discuss project X deliverables."
+    ),
+    Document(
+        page_content="Reminder: Submit report by Friday."
+    ),
+    Document(
+        page_content="Upcoming event: tech conferrence next Wednesday.",
+    )
+    
+]
+
+
+
+# Create Embeddings
+embeddings = OpenAIEmbeddings(openai_api_key = OPENAI_API_KEY)
+
+
+
+# Split text for better retrieval
