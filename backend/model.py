@@ -40,3 +40,16 @@ llm = ChatOpenAI(model_name="gpt-turbo-3.5", openai_api_key=OPENAI_API_KEY)
 
 
 # Create Retrieval-augmented Generation (RAG) Chain
+
+# Load the QA Chain properly
+qa_chain = load_qa_chain(
+    llm=llm,
+    chain_type="stuff"
+)
+
+
+
+def get_response(query):
+    docs = retriever.get_relevant_documents(query)
+    return qa_chain.run(input_documents=docs, question=query)
+
