@@ -55,3 +55,13 @@ embeddings = OpenAIEmbeddings(openai_api_key = OPENAI_API_KEY)
 
 
 # Split text for better retrieval
+text_splitter = CharacterTextSplitter(chunk_size=200, chunk_overlap=50)
+docs = text_splitter.split_documents(documents)
+
+
+
+
+# Store embeddings in chromaDB
+vector_db = Chroma.from_documents(docs, embedding=embeddings, persist_directory=CHROMA_DB_PATH)
+
+print("Documents successfully indexed!")
