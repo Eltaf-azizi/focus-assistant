@@ -15,3 +15,23 @@ output = ".env" # Change the filename as needed
 
 
 gdown.download(url, output, quit=False)
+
+
+
+# Load environment variables
+load_dotenv()
+
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+CHROMA_DB_PATH = os.getenv("CHROMA_DB_PATH", "db")
+
+
+
+# Ensure API key is set
+if not OPENAI_API_KEY:
+    raise ValueError("OpenAI API not found in .env")
+
+
+
+# Load Documents
+documents = []
