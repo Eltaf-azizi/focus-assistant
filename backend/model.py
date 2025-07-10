@@ -24,3 +24,19 @@ CHROMA_DB_PATH = os.getenv("CHROMA_DB_PATH", "db")
 # Ensure API key is set
 if not OPENAI_API_KEY:
     raise ValueError("OpenAI API keu not found in .env")
+
+
+
+# Load Stored vector database
+embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
+vector_db = Chroma(persist_directory=CHROMA_DB_PATH, embedding_function=embeddings)
+retriever = vector_db.as_retriever()
+
+
+
+
+# Use GPT-3.5 for answer generation
+llm = ChatOpenAI(model_name="gpt-turbo-3.5", openai_api_key=OPENAI_API_KEY)
+
+
+# Create Retrieval-augmented Generation (RAG) Chain
