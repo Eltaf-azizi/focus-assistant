@@ -10,3 +10,15 @@ An AI-powered personal productivity assistant that helps you stay organized, foc
 - 📚 Store and retrieve context-rich data using **ChromaDB**
 - ☁️ Deploy your app to the cloud using **CI/CD pipelines**
 - 🐳 Use **Docker**, **GitHub Actions**, and **AWS** for scalable, maintainable deployment
+
+
+
+## 📌 Why Focus Assistant?
+
+- Perfect for **beginners** looking to learn full-stack Python development  
+- Build a **real-world AI application** from scratch  
+- Learn hands-on skills in development, deployment, and cloud integration  
+- Gain experience working with **vector databases**, APIs, and automation tools
+
+
+
