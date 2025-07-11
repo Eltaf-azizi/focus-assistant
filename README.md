@@ -91,4 +91,14 @@ python main.py
 
 ```
 
+☁️ Deployment
+This project supports automatic deployment using:
+
+GitHub Actions for CI/CD
+
+Docker for containerized builds
+
+AWS EC2 or Render for hosting
+
+Steps are detailed in the /deploy folder (to be added).
 
