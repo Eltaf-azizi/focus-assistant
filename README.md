@@ -106,3 +106,6 @@ This project supports automatic deployment using:
 
 Focus Assistant is part of a bigger vision to combine AI, productivity tools, and automation into everyday workflows for students, developers, and entrepreneurs.
 
+
+## 🙌 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
