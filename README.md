@@ -91,14 +91,18 @@ python main.py
 
 ```
 
-☁️ Deployment
+## ☁️ Deployment
 This project supports automatic deployment using:
 
-GitHub Actions for CI/CD
+ - GitHub Actions for CI/CD
 
-Docker for containerized builds
+ - Docker for containerized builds
 
-AWS EC2 or Render for hosting
+ - AWS EC2 or Render for hosting
 
-Steps are detailed in the /deploy folder (to be added).
+ - Steps are detailed in the /deploy folder (to be added).
+
+## 🧠 Inspiration
+
+Focus Assistant is part of a bigger vision to combine AI, productivity tools, and automation into everyday workflows for students, developers, and entrepreneurs.
 
