@@ -58,4 +58,14 @@ An AI-powered personal productivity assistant that helps you stay organized, foc
     ├── README.md                  # Project documentation
 
 
+## 🚧 Features (Planned or Implemented)
+
+- [x] User-friendly interface for daily planning  
+- [x] AI assistant to answer personal productivity queries  
+- [x] Store tasks, notes, and conversations in a vector DB  
+- [ ] Natural language command execution  
+- [ ] Daily summary and reminders  
+- [ ] Slack or MS Teams integration (optional)
+
+
 
