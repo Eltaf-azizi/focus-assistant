@@ -81,5 +81,14 @@ An AI-powered personal productivity assistant that helps you stay organized, foc
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
+
+## 🚀 Run the app
+```bash
+Copy
+Edit
+python main.py
+
+```
 
 
