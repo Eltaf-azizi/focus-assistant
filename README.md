@@ -22,3 +22,40 @@ An AI-powered personal productivity assistant that helps you stay organized, foc
 
 
 
+## 🛠️ Tech Stack
+
+| Tool/Tech         | Purpose                         |
+|-------------------|----------------------------------|
+| **Python**        | Core programming language        |
+| **Flask**         | Web framework                    |
+| **ChromaDB**      | Vector database for embeddings   |
+| **LangChain**     | AI orchestration (if applicable) |
+| **Docker**        | Containerization                 |
+| **GitHub Actions**| CI/CD automation                 |
+| **AWS**           | Cloud deployment (EC2/S3/etc.)   |
+
+
+
+## 📁 Project Structure 
+
+    focus-assistant/
+    ├── .github/
+    │   └── workflows/
+    │       └── .gitkeep
+    ├── backend/
+    │   ├── ingest_data.py         # Handles data ingestion into ChromaDB
+    │   └── model.py               # AI logic or LLM integration
+    ├── static/
+    │   ├── app.js                 # Frontend JS logic
+    │   └── style.css              # Styling for the web interface
+    ├── templates/
+    │   └── index.html             # Main UI page (Jinja2 template)
+    ├── .env                       # Environment variables
+    ├── app.py                     # Main Flask app
+    ├── template.py                # (Likely) rendering logic or additional template functions
+    ├── Dockerfile                 # Docker container setup
+    ├── requirements.txt           # Python dependencies
+    ├── README.md                  # Project documentation
+
+
+
