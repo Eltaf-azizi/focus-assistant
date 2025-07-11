@@ -68,4 +68,18 @@ An AI-powered personal productivity assistant that helps you stay organized, foc
 - [ ] Slack or MS Teams integration (optional)
 
 
+## 🧪 Getting Started
+
+### 🔧 Prerequisites
+- Python 3.10+
+- Docker
+- Git
+- AWS CLI (optional)
+
+### 🐍 Create your virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
 
