@@ -15,3 +15,24 @@ os.system("python backend/ingest_data.py")
 
 app = Flask(__name__)
 CORS(app)
+
+
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+
+
+@app.route("/query", methods=["POST"])
+def query_assistant():
+    data = request.json
+    user_query = data.get("query", "")
+
+
+    if not user_query:
+        return jsonify({"error": "Query cannot be empty"}), 400
+    
+
+    response = get_response(user_query)
+    return jsonify({"response": response})
