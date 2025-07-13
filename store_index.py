@@ -20,3 +20,23 @@ embeddings = download_hugging_face_embeddings()
 pc = Pinecone(api_key=PINECONE_API_KEY)
 
 index_name = "medicalbot"
+
+
+
+pc.create_index(
+    name=index_name,
+    dimension=384, 
+    metric="cosine", 
+    spec=ServerlessSpec(
+        cloud="aws", 
+        region="us-east-1"
+    ) 
+) 
+
+# Embed each chunk and upsert the embeddings into your Pinecone index.
+docsearch = PineconeVectorStore.from_documents(
+    documents=text_chunks,
+    index_name=index_name,
+    embedding=embeddings, 
+)
+
