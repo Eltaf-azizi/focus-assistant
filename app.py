@@ -46,3 +46,23 @@ question_answer_chain = create_stuff_documents_chain(llm, prompt)
 rag_chain = create_retrieval_chain(retriever, question_answer_chain)
 
 
+@app.route("/")
+def index():
+    return render_template('chat.html')
+
+
+@app.route("/get", methods=["GET", "POST"])
+def chat():
+    msg = request.form["msg"]
+    input = msg
+    print(input)
+    response = rag_chain.invoke({"input": msg})
+    print("Response : ", response["answer"])
+    return str(response["answer"])
+
+
+
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port= 8080, debug= True)
+
