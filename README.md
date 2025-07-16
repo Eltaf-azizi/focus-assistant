@@ -106,6 +106,14 @@ This project supports automatic deployment using:
 
 Focus Assistant is part of a bigger vision to combine AI, productivity tools, and automation into everyday workflows for students, developers, and entrepreneurs.
 
+## 🤝 Contributing
+We welcome medical professionals & AI researchers to improve diagnostic accuracy!
 
-## 🙌 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+ - Report issues for misdiagnoses
+
+ - Suggest PubMed query optimizations
+
+ - Add new symptom parsing rules
+
+<h3 align="center">Happy Coding!</h3>
+
