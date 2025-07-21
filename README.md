@@ -38,24 +38,32 @@ An AI-powered personal productivity assistant that helps you stay organized, foc
 
 ## 📁 Project Structure 
 
-    focus-assistant/
-    ├── .github/
-    │   └── workflows/
-    │       └── .gitkeep
-    ├── backend/
-    │   ├── ingest_data.py         # Handles data ingestion into ChromaDB
-    │   └── model.py               # AI logic or LLM integration
-    ├── static/
-    │   ├── app.js                 # Frontend JS logic
-    │   └── style.css              # Styling for the web interface
-    ├── templates/
-    │   └── index.html             # Main UI page (Jinja2 template)
-    ├── .env                       # Environment variables
-    ├── app.py                     # Main Flask app
-    ├── template.py                # (Likely) rendering logic or additional template functions
-    ├── Dockerfile                 # Docker container setup
-    ├── requirements.txt           # Python dependencies
-    ├── README.md                  # Project documentation
+    .
+    ├── .github/workflows/ # CI/CD pipeline setup
+    │ └── cicd.yaml
+    ├── backend/ # Backend logic and data ingestion
+    │ ├── ingest_data.py
+    │ └── model.py
+    ├── Data/ # Sample data (e.g., PDFs)
+    │ └── Medical_book.pdf
+    ├── src/ # Core logic
+    │ ├── init.py
+    │ ├── helper.py
+    │ └── prompt.py
+    ├── static/ # Static files (CSS)
+    │ └── styles.css
+    ├── templates/ # HTML templates
+    │ └── index.html
+    ├── .env # Environment variables
+    ├── .dockerignore
+    ├── .gitignore
+    ├── app.py # Flask application
+    ├── Dockerfile # Docker container setup
+    ├── README.md # Project documentation
+    ├── requirements.txt # Python dependencies
+    ├── setup.py # Setup script for packaging
+    ├── store_index.py # Vector store handler
+    └── template.py # Base template file
 
 
 ## 🚧 Features (Planned or Implemented)
