@@ -66,14 +66,14 @@ An AI-powered personal productivity assistant that helps you stay organized, foc
     └── template.py # Base template file
 
 
-## 🚧 Features (Planned or Implemented)
+## 🚀 Features
 
-- [x] User-friendly interface for daily planning  
-- [x] AI assistant to answer personal productivity queries  
-- [x] Store tasks, notes, and conversations in a vector DB  
-- [ ] Natural language command execution  
-- [ ] Daily summary and reminders  
-- [ ] Slack or MS Teams integration (optional)
+- 🔍 **AI Assistance** using prompt engineering
+- 📄 **PDF Document Parsing** (e.g., Medical_book.pdf)
+- 🧠 **Contextual Answering** using embeddings
+- 🌐 **Web Interface** using Flask (HTML + CSS)
+- 📦 **Dockerized** for easy deployment
+- 🔁 **CI/CD Pipeline** via GitHub Actions
 
 
 ## 🧪 Getting Started
